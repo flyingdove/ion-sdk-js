@@ -9,8 +9,8 @@
     "lib/**/*"
   ],
   "scripts": {
-    "addProtosToBuild": "[ -d ./lib/signal/_proto/library ] || (mkdir ./lib/signal/_proto && mkdir ./lib/signal/_proto/library) && cp -r ./src/signal/_proto/library ./lib/signal/_proto",
-    "build": "tsc && npm run addProtosToBuild",
+    "addSourceLibs": "(mkdir ./_library) && cp -r ./src/_library ./_library",
+    "build": "tsc && npm run addSourceLibs",
     "bundle": "webpack",
     "dev": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\"",
