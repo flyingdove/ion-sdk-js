@@ -6,7 +6,8 @@
   "types": "lib/index.d.ts",
   "files": [
     "dist/*",
-    "lib/**/*"
+    "lib/**/*",
+    "_library/*"
   ],
   "scripts": {
     "addSourceLibs": "shx cp -R ./src/_library ./_library",
