@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "addSourceLibs": "shx cp -R ./src/_library ../",
-    "build": "tsc && npm run addSourceLibs",
+    "build": "tsc && npm run",
     "bundle": "webpack",
     "dev": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\"",
