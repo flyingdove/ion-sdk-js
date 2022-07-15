@@ -9,7 +9,7 @@
     "lib/**/*"
   ],
   "scripts": {
-    "addSourceLibs": "shx cp -R ./src/_library ../../_library",
+    "addSourceLibs": "shx cp -R ./src/_library ../lib/_library",
     "build": "tsc && npm run addSourceLibs",
     "bundle": "webpack",
     "dev": "tsc -w",
