@@ -6,12 +6,11 @@
   "types": "lib/index.d.ts",
   "files": [
     "dist/*",
-    "lib/**/*",
-    "_library/*"
+    "lib/**/*"
   ],
   "scripts": {
-    "addSourceLibs": "shx cp -R ./src/_library ../",
-    "build": "tsc",
+    "addSourceLibs": "shx cp -R ./src/_library ../../_library",
+    "build": "tsc && npm run addSourceLibs",
     "bundle": "webpack",
     "dev": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\"",
